@@ -1,0 +1,35 @@
+from string import punctuation
+from operator import itemgetter
+
+
+N = 50000
+words = {}
+res = []
+words_gen = [word.strip(punctuation).lower() for line in open("try.txt")
+                                             for word in line.split()]
+print words_gen
+
+stop_w = [word.strip(punctuation).lower() for line in open("stop_words.txt")
+                                             for word in line.split()]
+print stop_w
+
+
+for item in stop_w:
+    while item in words_gen:
+        words_gen.remove(item)
+
+
+res=words_gen
+    
+        
+
+#res = list(set(words_gen).difference(set(stop_w)))
+print res
+for word in res:
+    words[word] = words.get(word, 0) + 1
+
+top_words = sorted(words.iteritems(), key=itemgetter(1), reverse=True)[:N]
+
+for word, frequency in top_words:
+    print "%s: %d" % (word, frequency)
+

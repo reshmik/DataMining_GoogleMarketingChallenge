@@ -1,0 +1,43 @@
+==============
+ Movable IDLE
+==============
+-----------------
+ IDLE on a Stick
+-----------------
+
+
+Portable Version of IDLE
+========================
+
+
+**Movable IDLE** is a portable version of IDLE, the Python IDE that comes with Python. It is built with Python 2.4.3, and has the full Python standard library. This means that it should run *most* Python programs. 
+
+It does lack most of the features of `Movable Python <index.html>`_, including the GUI launcher and some of the trickery. It should still be
+useful for educational purposes and experimenting with.
+
+Like **Movable Python**, it easily fits on a USB stick or memory card.
+
+If you like or appreciate **Movable IDLE**, please support it by purchasing Movable Python : http://voidspace.tradebit.com/groups.php
+
+Limitations
+===========
+
+**Movable IDLE** will run almost every program that can be run from IDLE. It does not have all the clever trickery that **Movable Python** does. This means that the `win32 <http://sourceforge.net/projects/pywin32>`_ extensions, or any program that uses ``imp.find_module`` are unlikely to work. It also won't work with programs that have another event loop, like other GUI toolkits, won't work.
+
+If you need these features, try `Movable Python`_. {sm;:-)}
+
+On the other hand, if you do find bugs or restrictions, post them to the `Movable Python Mailing List <http://groups.google.com/group/movpy>`_ and it may be possible to fix them.
+
+
+License
+=======
+
+**Movable IDLE** is copyright *Michael Foord*, 2006. It is free, but not Open Source.
+
+You are free to copy and distribute **Movable IDLE**, but not to charge for it. It may not be included in any distribution which charges directly or indirectly, without express permission.
+
+The following sections of the `Movable Python License <license.html>`_ also apply :
+
+* *Disclaimer*
+* *Limitations*
+* *Restricted Uses*
